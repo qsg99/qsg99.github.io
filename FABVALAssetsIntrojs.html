@@ -41,17 +41,33 @@
 
     let x2 = $('#x2');
     x2.attr("data-step", "3");
-    x2.attr("data-intro", "We want to compare performances between periods");
+    x2.attr("data-intro", "Current assets are expected to be utilized in business in less than a year. ");
     x2.attr("data-position", "bottom");
 
     let x3 = $('#x3');
     x3.attr("data-step", "4");
-    x3.attr("data-intro", "We set “alternative” to “greater” because the test is one-sided.");
+    x3.attr("data-intro", "Noncurrent assets are used over a period lasting more than one year. Cash is reported as a current asset regardless of its expected usage period.");
     x3.attr("data-position", "bottom");
 
     let x4 = $('#x4');
     x4.attr("data-step", "5");
-    x4.attr("data-intro", "Because we are comparing Q4 to Q1-Q3 for each store within each year, we know these data are paired, and set “paired” to TRUE", "bottom");
+    x4.attr("data-intro", "Aside from a temporal distinction between current and noncurrent assets, there are a handful of additional classifications of assets worth mentioning:"
+    x4.attr("data-position", "bottom");
+    
+    let x5 = $('#x5');
+    x5.attr("data-step", "6");
+    x5.attr("data-intro", "Investments include long-term holdings of stocks and bonds held by the company."
+    x5.attr("data-position", "bottom");
+    
+    let x6 = $('#x6');
+    x6.attr("data-step", "7");
+    x6.attr("data-intro", "Intangible Assets Intangible assets are non-physical in nature, and as such can be difficult to value. Common assets in this bucket include copyrights, patents, trademarks and goodwill, which arises when a company acquires an existing business and is representative of the difference between the purchase price and the book value of the assets acquired."
+    x6.attr("data-position", "bottom");
+    
+    let x7 = $('#x7');
+    x7.attr("data-step", "8");
+    x7.attr("data-intro", " Liabilities represent a company’s obligations, meaning they require the payment of future value that can be expressed in a dollar amount. Liabilities reflect obligations to vendors, suppliers, employees, lenders and even the government. These parties are known as the company’s creditors."
+    x7.attr("data-position", "bottom");
 
   }
 </script>
@@ -63,8 +79,8 @@
 <table class="tg" style="height: 313px; width: 54.7337%;">
 <tbody>
 <tr style="height: 196px;">
-<td class="tg-0lax" style="height: 313px; width: 46.0586%;" rowspan="2">
-<span style="font-weight: bold; color: #333;" id="x1">ASSETS</span>
+<td class="tg-0lax" style="height: 313px; width: 46.0586%;" rowspan="2" id="x1">
+<span style="font-weight: bold; color: #333;" >ASSETS</span>
 <br /><br /><span style="color: #fd6864;">Current assets</span><br />Cash<br />Accounts receivable<br />Inventories<br />Pre-paid expenses<br />Other short-term assets<br /><br /><span style="color: #fe0000;">Noncurrent assets</span><br />Land<br />PP&amp;E at acquisition cost<br />(Accumulated depreciation)<br />Intangible assets<br />Other long-lived assets</td>
 <td class="tg-0lax" style="height: 196px; width: 47.7116%;"><span style="font-weight: bold;">LIABILITIES</span><br /><br /><span style="color: #fd6864;">Current Liabilities</span><br />Accounts payable<br />Notes payable<br />Other short-term liabilities<br /><br /><span style="color: #fd6864;">Non-current liabilities</span><br />Bonds payable<br />Other long-term liabilities</td>
 </tr>
