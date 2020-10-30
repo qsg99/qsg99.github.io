@@ -34,43 +34,38 @@
     navmaker.attr("data-intro", "View the table annotations. Click on the 'next' button or press the right arrow key to continue. Press 'escape' or click 'done' to quit this tour.");
     navmaker.attr("data-position", "bottom");
 
-    let x1 = $('#x1');
-    x1.attr("data-step", "2");
-   	x1.attr("data-intro", "Total paid-in capital is often disclosed as two separate line items in the stockholders’ equity section. ");
-    x1.attr("data-position", "bottom");
-
     let x2 = $('#x2');
-    x2.attr("data-step", "3");
-    x2.attr("data-intro", "For Flowers Foods, the first of these two lines is common stock at par. ");
+    x2.attr("data-step", "2");
+    x2.attr("data-intro", "Total paid-in capital is often disclosed as two separate line items in the stockholders’ equity section. For Flowers Foods, the first of these two lines is common stock at par. ");
     x2.attr("data-position", "bottom");
 
     let x3 = $('#x3');
-    x3.attr("data-step", "4");
+    x3.attr("data-step", "3");
     x3.attr("data-intro", "The second line is capital in excess of par value. This is most commonly referred to as additional paid-in capital, or APIC.");
     x3.attr("data-position", "bottom");
 
-    let x4 = $('#x4');
-    x4.attr("data-step", "5");
+    let x4 = $('.x4');
+    x4.attr("data-step", "4");
     x4.attr("data-intro", "Two lines are needed for paid-in capital because the price at which Flowers Foods sold stock to investors is greater than the stock’s so-called par value. Par value is a legal concept covered in corporate law.  For our purposes think of it as a minimum price at which stock can be sold by the company.");
     x4.attr("data-position", "bottom");
     
     let x5 = $('#x5');
-    x5.attr("data-step", "6");
+    x5.attr("data-step", "5");
     x5.attr("data-intro", " Flowers Foods’ common stock has a par value of a penny per share, but the stock was sold to investors at a higher price. The amounts raised by Flowers Foods from the common stock sale over and above par value are reported as “capital in excess of par value.”");
     x5.attr("data-position", "bottom");
     
     let x6 = $('#x6');
-    x6.attr("data-step", "7");
+    x6.attr("data-step", "6");
     x6.attr("data-intro", "The total paid-in capital is simply the sum of the two lines – common stock at par and capital in excess of par value. For Flowers Foods, the total amounts to $653,676,000 at the end of 2019.");
     x6.attr("data-position", "bottom");
     
     let x7 = $('#x7');
-    x7.attr("data-step", "8");
+    x7.attr("data-step", "7");
     x7.attr("data-intro", " Flowers Foods’ stockholders’ equity includes two major sources of capital: the first is capital of $653,676,000 raised from investors. ");
     x7.attr("data-position", "bottom");
     
     let x8 = $('#x8');
-    x8.attr("data-step", "9");
+    x8.attr("data-step", "8");
     x8.attr("data-intro", " The second is retained earnings of $945,410,000.");
     x8.attr("data-position", "bottom");
     
@@ -83,34 +78,57 @@
 
 <style type="text/css">.tg  {border-collapse:collapse;border-spacing:0;}.tg td{border-color:black;border-style:solid;border-width:1px;font-family:Arial, sans-serif;font-size:14px;  overflow:hidden;padding:10px 5px;word-break:normal;}.tg th{border-color:black;border-style:solid;border-width:1px;font-family:Arial, sans-serif;font-size:14px;  font-weight:normal;overflow:hidden;padding:10px 5px;word-break:normal;}.tg .tg-0lax{text-align:left;vertical-align:top}</style>
 
-<table class="tg" style="height: 313px; width: 54.7337%;">
+<table class="tg">
 <tbody>
-  
-<tr style="height: 196px;">
-  
-<td class="tg-0lax" style="height: 313px; width: 46.0586%;" rowspan="2" >
-  <div id="x1">
-  <span style="font-weight: bold; color: #333;">ASSETS</span>
-  <br /><br />
-  <span style="color: #fd6864;" id="x2">Current assets</span><br />Cash<br />Accounts receivable<br />Inventories<br />Pre-paid expenses<br />Other short-term  assets<br /><br />
-  <div id="x4"> <span style="color: #fe0000;" id="x3">Noncurrent assets</span><br />Land<br /><span id="x5">PP&amp;E at acquisition cost</span><br />(Accumulated depreciation)<br /><span id="x6">Intangible assets</span><br />Other long-lived assets </div>
-</div></td> 
-  
-<td class="tg-0lax" style="height: 196px; width: 47.7116%;"><span style="font-weight: bold;"><div id="x7">
-  LIABILITIES</span><br /><br />
-  <div id="x8"><span style="color: #fd6864;">Current Liabilities</span><br />Accounts payable<br />Notes payable<br />Other short-term liabilities</div>
-    <br /><br />
-  <div id="x9"><span style="color: #fd6864;">Non-current liabilities</span><br />Bonds payable<br />Other long-term liabilities</div>
-  </div></td>
-  
+<tr>
+<td class="tg-0lax">Stockholders' Equity</td>
+<td class="tg-0lax">2019</td>
+<td class="tg-0lax">2018</td>
 </tr>
-  
-<tr style="height: 117px;">
-  
-<td class="tg-0lax" style="height: 117px; width: 47.7116%;"><div id="x10">
-  <span style="font-weight: bold;">STOCKHOLDERS' EQUITY</span><br /><br />Capital at par<br /><span id="x11">Additional paid-in capital</span><br /><span id="x12">Retained earnings</span><br />Other SE items
-  </div></td>
-  
+<tr>
+<td class="tg-0lax">Preferred stock - $100 Stated par value, 200,000 authorized and none issued</td>
+<td class="tg-0lax">-</td>
+<td class="tg-0lax">-</td>
+</tr>
+<tr>
+<td class="tg-0lax">Preferred stock - $.01 stated par value, 800,000 authorized and none issued.</td>
+<td class="tg-0lax">-</td>
+<td class="tg-0lax">-</td>
+</tr>
+<tr>
+<td class="tg-0lax"><span id="x2" class="x4">Common stock - $.01 stated par value and $.001 current par value;<br />500,000,000 authorized shares; 228,729,585 issued shares</span></td>
+<td class="tg-0lax">199</td>
+<td class="tg-0lax">199</td>
+</tr>
+<tr>
+<td class="tg-0lax">Treasury stock - 17,834,378 and 18,203,381 shares, respectively</td>
+<td class="tg-0lax">(231,648)</td>
+<td class="tg-0lax">(235,493)</td>
+</tr>
+<tr>
+  <td class="tg-0lax"><span id="x3" class="x4"><span id="x5">Capital in excess of par value</span></span></td>
+<td class="tg-0lax">653,477</td>
+<td class="tg-0lax">650,872</td>
+</tr>
+<tr>
+<td class="tg-0lax">Retained earnings</td>
+<td class="tg-0lax">945,410</td>
+<td class="tg-0lax">919,658</td>
+</tr>
+<tr>
+<td class="tg-0lax">Accumulated other comprehensive loss</td>
+<td class="tg-0lax">(109,171)</td>
+<td class="tg-0lax">(84,559)</td>
+</tr>
+<tr>
+<td class="tg-0lax">Total stockholders' equity</td>
+<td class="tg-0lax">1,258,267</td>
+<td class="tg-0lax">1,250,677</td>
+</tr>
+<tr>
+<td class="tg-0lax">Total Liabilities and Stockholders' Equity</td>
+<td class="tg-0lax">2,845,537</td>
+<td class="tg-0lax">2,659,724</td>
 </tr>
 </tbody>
 </table>
