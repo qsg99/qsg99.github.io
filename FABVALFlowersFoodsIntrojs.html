@@ -1,0 +1,116 @@
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+<!-- This style sheet is necessary for the intro.js text blocks to work. -->
+<link rel="stylesheet" type="text/css" href="https://qsg99.github.io/introjs.css" />
+<!-- So is this script. -->
+<script src="https://qsg99.github.io/intro_accessible.js"></script>
+
+<script>
+  $(document).ready(function(){
+    
+    /*****************************************************
+    * This section enables the intro.js text blocks.
+    * They're set in the addNavData() function below.
+    *****************************************************/
+
+    addNavData();
+    
+    $('#navmaker').on('click tap', function(event){
+        event.preventDefault();
+        introJs().start();
+    });
+    
+    // End of intro.js code.
+    
+  });
+  
+  /**************************************************************
+  * This function adds the data needed for the intro.js text blocks.
+  * You can change the text if you want.
+  **************************************************************/
+  function addNavData(){
+    let navmaker = $('#navmaker');
+    navmaker.attr("data-step", "1");
+    navmaker.attr("data-intro", "View the table annotations. Click on the 'next' button or press the right arrow key to continue. Press 'escape' or click 'done' to quit this tour.");
+    navmaker.attr("data-position", "bottom");
+
+    let x1 = $('#x1');
+    x1.attr("data-step", "2");
+   	x1.attr("data-intro", "Assets are a company’s resources. They have future economic value that can be expressed in a dollar amount. Note that assets also include prepaid expenses, as the company receives economic value from having paid for goods or services that have not yet been delivered. Companies generally classify assets into two broad categories in their balance sheet presentations – current assets and noncurrent assets. ");
+    x1.attr("data-position", "bottom");
+
+    let x2 = $('#x2');
+    x2.attr("data-step", "3");
+    x2.attr("data-intro", "Current assets are expected to be utilized in business in less than a year. ");
+    x2.attr("data-position", "bottom");
+
+    let x3 = $('#x3');
+    x3.attr("data-step", "4");
+    x3.attr("data-intro", "Noncurrent assets are used over a period lasting more than one year. Cash is reported as a current asset regardless of its expected usage period.");
+    x3.attr("data-position", "bottom");
+
+    let x4 = $('#x4');
+    x4.attr("data-step", "5");
+    x4.attr("data-intro", "Aside from a temporal distinction between current and noncurrent assets, there are a handful of additional classifications of assets worth mentioning. Investments include long-term holdings of stocks and bonds held by the company.");
+    x4.attr("data-position", "bottom");
+    
+    let x5 = $('#x5');
+    x5.attr("data-step", "6");
+    x5.attr("data-intro", "Investments include long-term holdings of stocks and bonds held by the company.");
+    x5.attr("data-position", "bottom");
+    
+    let x6 = $('#x6');
+    x6.attr("data-step", "7");
+    x6.attr("data-intro", "Intangible Assets Intangible assets are non-physical in nature, and as such can be difficult to value. Common assets in this bucket include copyrights, patents, trademarks and goodwill, which arises when a company acquires an existing business and is representative of the difference between the purchase price and the book value of the assets acquired.");
+    x6.attr("data-position", "bottom");
+    
+    let x7 = $('#x7');
+    x7.attr("data-step", "8");
+    x7.attr("data-intro", " Liabilities represent a company’s obligations, meaning they require the payment of future value that can be expressed in a dollar amount. Liabilities reflect obligations to vendors, suppliers, employees, lenders and even the government. These parties are known as the company’s creditors.");
+    x7.attr("data-position", "bottom");
+    
+    let x8 = $('#x8');
+    x8.attr("data-step", "9");
+    x8.attr("data-intro", " Similarly, companies classify liabilities into two groups – current liabilities are obligations that are expected to be paid within one year. ");
+    x8.attr("data-position", "bottom");
+    
+
+
+  }
+</script>
+
+<p><button id="navmaker" style="color: white; padding: 6px; font-size: 16px; background-color: #009b00; text-shadow: none; background-image: none;">What does it all mean?</button></p>
+
+<style type="text/css">.tg  {border-collapse:collapse;border-spacing:0;}.tg td{border-color:black;border-style:solid;border-width:1px;font-family:Arial, sans-serif;font-size:14px;  overflow:hidden;padding:10px 5px;word-break:normal;}.tg th{border-color:black;border-style:solid;border-width:1px;font-family:Arial, sans-serif;font-size:14px;  font-weight:normal;overflow:hidden;padding:10px 5px;word-break:normal;}.tg .tg-0lax{text-align:left;vertical-align:top}</style>
+
+<table class="tg" style="height: 313px; width: 54.7337%;">
+<tbody>
+  
+<tr style="height: 196px;">
+  
+<td class="tg-0lax" style="height: 313px; width: 46.0586%;" rowspan="2" >
+  <div id="x1">
+  <span style="font-weight: bold; color: #333;">ASSETS</span>
+  <br /><br />
+  <span style="color: #fd6864;" id="x2">Current assets</span><br />Cash<br />Accounts receivable<br />Inventories<br />Pre-paid expenses<br />Other short-term  assets<br /><br />
+  <div id="x4"> <span style="color: #fe0000;" id="x3">Noncurrent assets</span><br />Land<br /><span id="x5">PP&amp;E at acquisition cost</span><br />(Accumulated depreciation)<br /><span id="x6">Intangible assets</span><br />Other long-lived assets </div>
+</div></td> 
+  
+<td class="tg-0lax" style="height: 196px; width: 47.7116%;"><span style="font-weight: bold;"><div id="x7">
+  LIABILITIES</span><br /><br />
+  <div id="x8"><span style="color: #fd6864;">Current Liabilities</span><br />Accounts payable<br />Notes payable<br />Other short-term liabilities</div>
+    <br /><br />
+  <div id="x9"><span style="color: #fd6864;">Non-current liabilities</span><br />Bonds payable<br />Other long-term liabilities</div>
+  </div></td>
+  
+</tr>
+  
+<tr style="height: 117px;">
+  
+<td class="tg-0lax" style="height: 117px; width: 47.7116%;"><div id="x10">
+  <span style="font-weight: bold;">STOCKHOLDERS' EQUITY</span><br /><br />Capital at par<br /><span id="x11">Additional paid-in capital</span><br /><span id="x12">Retained earnings</span><br />Other SE items
+  </div></td>
+  
+</tr>
+</tbody>
+</table>
